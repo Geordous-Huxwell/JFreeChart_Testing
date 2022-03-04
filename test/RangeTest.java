@@ -2,7 +2,7 @@ import org.junit.jupiter.api.Test;
 //package src.org.jfree.data;
 
 import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.assertThrows;
+//import static org.junit.Assert.assertThrows;
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.jfree.data.Range;
