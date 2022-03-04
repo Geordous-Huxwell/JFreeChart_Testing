@@ -63,7 +63,7 @@ class RangeTest {
 	}
 	
 	
-	//Combine Tests
+	//Combine Test
 	
 	@Test
 	void combineTest() {
