@@ -350,15 +350,15 @@ public strictfp class Range implements Serializable {
      * 
      * @return A hash code for this range.
      */
-    public int hashCode() {
-        int result;
-        long temp;
-        temp = Double.doubleToLongBits(this.lower);
-        result = (int) (temp ^ (temp >>> 32));
-        temp = Double.doubleToLongBits(this.upper);
-        result = 29 * result + (int) (temp ^ (temp >>> 32));
-        return result;
-    }
+//    public int hashCode() {
+//        int result;
+//        long temp;
+//        temp = Double.doubleToLongBits(this.lower);
+//        result = (int) (temp ^ (temp >>> 32));
+//        temp = Double.doubleToLongBits(this.upper);
+//        result = 29 * result + (int) (temp ^ (temp >>> 32));
+//        return result;
+//    }
 
     /**
      * Returns a string representation of this Range.

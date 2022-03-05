@@ -214,7 +214,8 @@ class DataUtilitiesTest {
         double[] actualValues = new double[3];
         
         for (int i=0; i<actual.getItemCount(); i++){
-        	actualValues[i] = (double) actual.getValue(i);
+//        	actualValues[i] = (double) actual.getValue(i);
+        	assertEquals((double) actual.getValue(i), expectedValues[i]);
         }
         
 //        assertArrayEquals(expectedValues,actualValues);
