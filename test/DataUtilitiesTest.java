@@ -149,14 +149,11 @@ class DataUtilitiesTest {
         double[] expectedValues = {0.3125, 0.875, 1.0};
         
         KeyedValues actual = DataUtilities.getCumulativePercentages(list);
-        double[] actualValues = new double[3];
         
         for (int i=0; i<actual.getItemCount(); i++){
-        	actualValues[i] = (double) actual.getValue(i);
+        	assertEquals((double) actual.getValue(i), expectedValues[i]);
         }
-        
-//        assertArrayEquals(expectedValues,actualValues);
-        
+                
     }
 
 	@Test
@@ -178,14 +175,11 @@ class DataUtilitiesTest {
         double[] expectedValues = {0.0, 1.0};
         
         KeyedValues actual = DataUtilities.getCumulativePercentages(list);
-        double[] actualValues = new double[2];
         
         for (int i=0; i<actual.getItemCount(); i++){
-        	actualValues[i] = (double) actual.getValue(i);
+        	assertEquals((double) actual.getValue(i), expectedValues[i]);
         }
-        
-//        assertArrayEquals(expectedValues,actualValues);
-        
+                
     }
 	
 	@Test
@@ -211,14 +205,12 @@ class DataUtilitiesTest {
         double[] expectedValues = {-1.0, 0.0, 1.0};
         
         KeyedValues actual = DataUtilities.getCumulativePercentages(list);
-        double[] actualValues = new double[3];
         
         for (int i=0; i<actual.getItemCount(); i++){
-//        	actualValues[i] = (double) actual.getValue(i);
         	assertEquals((double) actual.getValue(i), expectedValues[i]);
         }
         
-//        assertArrayEquals(expectedValues,actualValues);
+
         
     }
 
@@ -241,14 +233,11 @@ class DataUtilitiesTest {
         double[] expectedValues = {0.5, 1.0};
         
         KeyedValues actual = DataUtilities.getCumulativePercentages(list);
-        double[] actualValues = new double[2];
         
         for (int i=0; i<actual.getItemCount(); i++){
-        	actualValues[i] = (double) actual.getValue(i);
+        	assertEquals((double) actual.getValue(i), expectedValues[i]);
         }
-        
-//        assertArrayEquals(expectedValues,actualValues);
-        
+                
     }
 	
 	@Test
