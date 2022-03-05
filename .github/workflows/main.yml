@@ -37,4 +37,4 @@ jobs:
           curl https://repo1.maven.org/maven2/org/jfree/jcommon/1.0.17/jcommon-1.0.17.jar -o lib/jcommon-1.0.17.jar
           javac -d bin/ -cp bin:lib/junit-platform-console-standalone-1.5.2.jar:lib/javax.servlet-api-3.0.1.jar:lib/jcommon-1.0.17.jar:mockito-all-2.0.2-beta.jar:lib/gnujaxp.jar:lib/jcommon-1.0.0-rc1-cvs.jar:lib/jcommon-1.0.5.jar:lib/servlet.jar $(find src/ -name "*.java")
           javac -d bin -cp bin:lib/junit-platform-console-standalone-1.5.2.jar:lib/javax.servlet-api-3.0.1.jar:lib/jcommon-1.0.17.jar:mockito-all-2.0.2-beta.jar:lib/gnujaxp.jar:lib/jcommon-1.0.0-rc1-cvs.jar:lib/jcommon-1.0.5.jar:lib/servlet.jar $(find test/ -name "*.java")
-          java -jar lib/junit-platform-console-standalone-1.5.2.jar -cp bin --scan-class-path
+          java -jar lib/junit-platform-console-standalone-1.5.2.jar -cp bin:mockito-all-2.0.2-beta.jar --scan-class-path
