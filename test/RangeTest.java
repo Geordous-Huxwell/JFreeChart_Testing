@@ -350,7 +350,7 @@ class RangeTest {
 	@Test
 	void constrainTestDecimalRoundDown() {
 		range = new Range(1,3);
-		assertEquals(1, range.constrain(1.2));
+		assertEquals(1.2, range.constrain(1.2));
 	}
 	
 	@Test
@@ -422,11 +422,6 @@ class RangeTest {
 		assertEquals(1, range.getUpperBound());
 	}
 	
-	@Test
-	void getUpperBoundTestNull() {
-		range = null;
-		assertThrows(NullPointerException.class, () -> range.getUpperBound());
-	}
 	
 	//shift Test
 	
@@ -489,5 +484,6 @@ class RangeTest {
 		range = null;
 		assertThrows(InvalidParameterException.class, () -> Range.shift(range, 1, false));
 	}
+	
 	
 }
