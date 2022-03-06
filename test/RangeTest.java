@@ -332,6 +332,13 @@ class RangeTest {
 		assertThrows(InvalidParameterException.class, 
 				() -> range.shift(range,delta));
 	}
+
+	@Test
+    void shift0Range() {
+        range = new Range(0,0);
+        double delta = 1;
+        assertEquals(new Range(1,1),range.shift(range,delta));
+    }
 	
 	//Constrain Test
 	
