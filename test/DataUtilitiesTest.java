@@ -125,9 +125,9 @@ class DataUtilitiesTest {
     }
 
         @Test
-    void createNumberArrayTestNull() {
-        double[] data = null;
-        assertThrows(InvalidParameterException.class, () -> DataUtilities.createNumberArray(data));
+    void createNumberArray2DTestNull() {
+        double[][] data = null;
+        assertThrows(InvalidParameterException.class, () -> DataUtilities.createNumberArray2D(data));
     } 
 	
 	// GetCumulativePercentages Tests
