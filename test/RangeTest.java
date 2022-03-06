@@ -180,6 +180,12 @@ class RangeTest {
 		range = new Range(1,4);
 		assertEquals("Range[1.0,4.0]", range.toString());
 	}
+
+	 @Test
+    void toStringTestInvalidEntry() {
+        range = new Range(7,4);
+        assertThrows(IllegalArgumentException.class, () -> range.toString());
+    }
 	
 	//Contains Tests
 	
