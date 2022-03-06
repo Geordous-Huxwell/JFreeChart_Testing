@@ -263,4 +263,10 @@ class DataUtilitiesTest {
         
     }
 
+    @Test
+    void testGetCumulativePercentagesWithNull() {
+        KeyedValues list = null;
+        assertThrows(IllegalArgumentException.class,() -> DataUtilities.getCumulativePercentages(list));
+    }
+
 }
