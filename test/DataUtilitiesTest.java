@@ -123,6 +123,12 @@ class DataUtilitiesTest {
         						{(Double) 5.0, (Double) 6.0, (Double) 7.0, (Double) 8.0}};
         assertArrayEquals(expected, DataUtilities.createNumberArray2D(data3));
     }
+
+        @Test
+    void createNumberArrayTestNull() {
+        double[] data = null;
+        assertThrows(InvalidParameterException.class, () -> DataUtilities.createNumberArray(data));
+    } 
 	
 	// GetCumulativePercentages Tests
 	
